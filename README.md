@@ -1,17 +1,14 @@
-Rack::Lettering
-===============
+# Rack::Lettering
 
 Rack::Lettering is a Rack Middleware for inserting [Lettering.js](http://letteringjs.com/) style syntax into a response body.
 
 It was built during [ConvergeSE](http://convergese.com/) 2011 and was inspired by a talk given by [Trent Walton](http://trentwalton.com/) about CSS Typography.
 
-Installation
-------------
+## Installation
 
-(sudo) gem install rack-lettering
+    gem install rack-lettering
 
-Usage
------
+## Usage
 
 Rack::Lettering accepts an options hash that allows you to define the lettering treatment (letters, words, or lines) you'd like for a given selector. Any CSS selector may be used.
 
@@ -20,13 +17,22 @@ Rack::Lettering accepts an options hash that allows you to define the lettering 
   use Rack:Lettering, :letters => ['#letter_selector'], :words => ['.word_selector'], :lines => ['#line_selector']
 ```
 
-Caveat
-------
+## Caveat
 
 I haven't actually compared the results with those from lettering.js.  The project has tests, but there may be edge cases I've missed.  Please feel free to fork and send pull requests if you find anything that's broken.
 
-License
--------
+## <a name="build"></a>Build Status
+[![Build Status](https://secure.travis-ci.org/spagalloco/rack-lettering.png?branch=master)][travis]
+
+[travis]: http://travis-ci.org/spagalloco/rack-lettering
+
+## <a name="dependencies"></a>Dependency Status
+[![Dependency Status](https://gemnasium.com/spagalloco/rack-lettering.png?travis)][gemnasium]
+
+[gemnasium]: https://gemnasium.com/spagalloco/rack-lettering
+
+## License
+
 Copyright (c) 2011 Steve Agalloco
 
 Permission is hereby granted, free of charge, to any person obtaining
